@@ -1,7 +1,7 @@
-package com.stockmaster.stockmaster_backend.service;
+package com.backend.service;
 
-import com.stockmaster.stockmaster_backend.entity.InventoryAudit;
-import com.stockmaster.stockmaster_backend.repository.InventoryAuditRepository;
+import com.backend.entity.InventoryAudit;
+import com.backend.repository.InventoryAuditRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

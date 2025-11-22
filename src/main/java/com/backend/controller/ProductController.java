@@ -1,7 +1,7 @@
-package com.stockmaster.stockmaster_backend.controller;
+package com.backend.controller;
 
-import com.stockmaster.stockmaster_backend.entity.Product;
-import com.stockmaster.stockmaster_backend.service.ProductService;
+import com.backend.entity.Product;
+import com.backend.service.ProductService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

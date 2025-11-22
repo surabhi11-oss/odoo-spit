@@ -1,6 +1,6 @@
-package com.stockmaster.stockmaster_backend.repository;
+package com.backend.repository;
 
-import com.stockmaster.stockmaster_backend.entity.Product;
+import com.backend.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {

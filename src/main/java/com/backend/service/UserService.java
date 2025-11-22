@@ -1,7 +1,7 @@
-package com.stockmaster.stockmaster_backend.service;
+package com.backend.service;
 
-import com.stockmaster.stockmaster_backend.entity.User;
-import com.stockmaster.stockmaster_backend.repository.UserRepository;
+import com.backend.entity.User;
+import com.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

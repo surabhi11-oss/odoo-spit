@@ -1,4 +1,4 @@
-package com.stockmaster.stockmaster_backend.entity;
+package com.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

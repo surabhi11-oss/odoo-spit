@@ -1,7 +1,7 @@
-package com.stockmaster.stockmaster_backend.controller;
+package com.backend.controller;
 
-import com.stockmaster.stockmaster_backend.entity.InventoryAudit;
-import com.stockmaster.stockmaster_backend.service.InventoryAuditService;
+import com.backend.entity.InventoryAudit;
+import com.backend.service.InventoryAuditService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

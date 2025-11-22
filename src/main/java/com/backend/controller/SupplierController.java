@@ -1,7 +1,7 @@
-package com.stockmaster.stockmaster_backend.controller;
+package com.backend.controller;
 
-import com.stockmaster.stockmaster_backend.entity.Supplier;
-import com.stockmaster.stockmaster_backend.service.SupplierService;
+import com.backend.entity.Supplier;
+import com.backend.service.SupplierService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

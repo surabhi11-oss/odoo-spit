@@ -1,4 +1,4 @@
-package com.stockmaster.stockmaster_backend.entity;
+package com.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -23,7 +23,7 @@ public class InventoryAudit {
     private int closingStock;     // stock after movement
 
     @Enumerated(EnumType.STRING)
-    private Transaction.TransactionType transactionType;
+    private TransactionType transactionType;
 
     private String reference;     // link to document / transaction no.
     private String reason;        // “Purchase from Supplier A”, “Damage adj”, etc.
@@ -32,5 +32,5 @@ public class InventoryAudit {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User createdBy;
+    private com.backend.entity.User createdBy;
 }
