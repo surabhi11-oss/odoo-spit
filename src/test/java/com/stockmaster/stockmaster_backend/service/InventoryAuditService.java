@@ -1,38 +1,33 @@
 package com.stockmaster.stockmaster_backend.service;
 
-import com.stockmaster.stockmaster_backend.entity.Product;
-import com.stockmaster.stockmaster_backend.repository.ProductRepository;
+import com.stockmaster.stockmaster_backend.entity.InventoryAudit;
+import com.stockmaster.stockmaster_backend.repository.InventoryAuditRepository;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
 public class InventoryAuditService {
 
-    private final ProductRepository repo;
+    private final InventoryAuditRepository repository;
 
-    public InventoryAuditService(ProductRepository repo) {
-        this.repo = repo;
+    public InventoryAuditService(InventoryAuditRepository repository) {
+        this.repository = repository;
     }
 
-    public List<Product> getAll() {
-        return repo.findAll();
+    public List<InventoryAudit> findAll() {
+        return repository.findAll();
     }
 
-    public Product add(Product product) {
-        return repo.save(product);
+    public InventoryAudit findById(Long id) {
+        return repository.findById(id).orElse(null);
     }
 
-    public Product update(Long id, Product newProduct) {
-        Product old = repo.findById(id).orElseThrow();
-        old.setName(newProduct.getName());
-        old.setCategory(newProduct.getCategory());
-        old.setUnit(newProduct.getUnit());
-        old.setCurrentStock(newProduct.getCurrentStock());
-        old.setMinimumStock(newProduct.getMinimumStock());
-        return repo.save(old);
+    public InventoryAudit create(InventoryAudit audit) {
+        return repository.save(audit);
     }
 
     public void delete(Long id) {
-        repo.deleteById(id);
+        repository.deleteById(id);
     }
 }
