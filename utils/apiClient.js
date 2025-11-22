@@ -69,3 +69,5 @@ export const del = async (url) => {
       console.error(`DELETE ${url} error:`, error);
    }
 };
+
+export const api = { get, post, put, del };
